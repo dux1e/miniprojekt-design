@@ -9,6 +9,7 @@ package tui;
 */
 public class MainMenuUI {
     // Instance Variables
+    private String kode;
 
     /**
      * Construtor for MainMenuUI.
