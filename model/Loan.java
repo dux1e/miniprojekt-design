@@ -6,6 +6,8 @@ public class Loan
     private String borrowDate;
     private int period;
     private boolean loanState;
+    private Person person;
+    private Copy copy;
 
     public Loan(int loanID, String borrowDate,int period, boolean loanState)
     {
