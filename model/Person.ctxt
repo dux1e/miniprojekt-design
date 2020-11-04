@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Person
+comment1.params=name\ personID\ postalCode\ city\ phone
+comment1.target=Person(java.lang.String,\ int,\ int,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Person\r\n
+comment10.params=
+comment10.target=java.lang.String\ getPhone()
+comment11.params=phone
+comment11.target=void\ setPhone(java.lang.String)
+comment2.params=
+comment2.target=int\ getPersonID()
+comment3.params=personID
+comment3.target=void\ setPersonID(int)
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment5.params=name
+comment5.target=void\ setName(java.lang.String)
+comment6.params=
+comment6.target=int\ getPostalCode()
+comment7.params=postalCode
+comment7.target=void\ setPostalCode(int)
+comment8.params=
+comment8.target=java.lang.String\ getCity()
+comment9.params=city
+comment9.target=void\ setCity(java.lang.String)
+numComments=12

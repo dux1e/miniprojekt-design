@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Loan
+comment1.params=loanID\ borrowDate\ period\ loanState
+comment1.target=Loan(int,\ java.lang.String,\ int,\ boolean)
+comment2.params=
+comment2.target=int\ getLoanID()
+comment3.params=loanID
+comment3.target=void\ setLoanID(int)
+comment4.params=
+comment4.target=java.lang.String\ getBorrowDate()
+comment5.params=borrowDate
+comment5.target=void\ setBorrowDate(java.lang.String)
+comment6.params=
+comment6.target=int\ getPeriod()
+comment7.params=period
+comment7.target=void\ setPeriod(int)
+comment8.params=
+comment8.target=boolean\ loanState()
+numComments=9

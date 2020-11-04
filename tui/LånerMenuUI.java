@@ -1,30 +1,37 @@
 package tui;
 import java.util.Scanner;
-public class MainMenuUI
+import controller.*;
+
+/**
+ * Write a description of class LånerMenu here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class LånerMenuUI
 {
-    private LånerMenuUI lånerMenuUI;
-    private LPMenuUI lpMenuUI;
+   private LoanController loanController;
+    
 
-    public MainMenuUI()
+    /**
+     * Constructor for objects of class LånerMenu
+     */
+    public LånerMenuUI()
     {
-        this.lånerMenuUI = new LånerMenuUI();
-        this.lpMenuUI = new LPMenuUI();
+        loanController = new LoanController();
+        
     }
 
-    public void start(){
-        hovedMenu();
-    }
-
-    private void hovedMenu(){
+    public void start() {
         boolean running = true;
         while (running) {
-            int choice = writeMainMenu();
+            int choice = writeLånerMenu();
             switch (choice) {
                 case 1:
-                lånerMenuUI.start();
+                System.out.println("Denne er ikke implementeret endnu");
                 break;
                 case 2:
-                lpMenuUI.start();
+                System.out.println("Denne er ikke implementeret endnu");
                 break;
                 case 3:
                 System.out.println("Denne er ikke implementeret endnu");
@@ -43,14 +50,14 @@ public class MainMenuUI
         }
     }
 
-    private int writeMainMenu() {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("****** Hovedmenu ******");
-        System.out.println(" (1) Lånermenu");
-        System.out.println(" (2) LP menu");
-        System.out.println(" (3) Udlånsmenu");
-        System.out.println(" (4) Generer testdata");// will generate testdata, delete in final version
-        System.out.println(" (0) Afslut programmet");
+    private int writeLånerMenu() {
+        Scanner keyboard = new Scanner(System.in);    
+        System.out.println("****** Låner Menu ******");
+        System.out.println(" (1) Opret Lån");
+        System.out.println(" (2) Indfri Lån");
+        System.out.println(" (3) Find Låner");
+        System.out.println(" (4) Print information om Låner");// will generate testdata, delete in final version
+        System.out.println(" (0) Tilbage");
         System.out.print("\n Vælg:");
         while (!keyboard.hasNextInt()) {
             System.out.println("Input skal være et tal - prøv igen");

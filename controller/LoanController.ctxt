@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LoanController
+comment1.params=
+comment1.target=LoanController()
+comment2.params=loanID\ borrowDate\ period
+comment2.target=void\ createLoan(int,\ java.lang.String,\ int)
+comment3.params=
+comment3.target=java.lang.String\ searchLoan()
+comment4.params=
+comment4.target=java.lang.String\ updateLoan()
+comment5.params=
+comment5.target=java.lang.String\ deleteLoan()
+numComments=6

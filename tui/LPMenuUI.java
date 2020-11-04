@@ -1,30 +1,35 @@
 package tui;
 import java.util.Scanner;
-public class MainMenuUI
+/**
+ * Write a description of class LånerMenu here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class LPMenuUI
 {
-    private LånerMenuUI lånerMenuUI;
-    private LPMenuUI lpMenuUI;
+    // instance variables - replace the example below with your own
+    
 
-    public MainMenuUI()
+    /**
+     * Constructor for objects of class LånerMenu
+     */
+    public LPMenuUI()
     {
-        this.lånerMenuUI = new LånerMenuUI();
-        this.lpMenuUI = new LPMenuUI();
+        
+        
     }
 
-    public void start(){
-        hovedMenu();
-    }
-
-    private void hovedMenu(){
+    public void start() {
         boolean running = true;
         while (running) {
-            int choice = writeMainMenu();
+            int choice = writeLPMenu();
             switch (choice) {
                 case 1:
-                lånerMenuUI.start();
+                System.out.println("Denne er ikke implementeret endnu");
                 break;
                 case 2:
-                lpMenuUI.start();
+                System.out.println("Denne er ikke implementeret endnu");
                 break;
                 case 3:
                 System.out.println("Denne er ikke implementeret endnu");
@@ -43,14 +48,14 @@ public class MainMenuUI
         }
     }
 
-    private int writeMainMenu() {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("****** Hovedmenu ******");
-        System.out.println(" (1) Lånermenu");
-        System.out.println(" (2) LP menu");
-        System.out.println(" (3) Udlånsmenu");
-        System.out.println(" (4) Generer testdata");// will generate testdata, delete in final version
-        System.out.println(" (0) Afslut programmet");
+    private int writeLPMenu() {
+        Scanner keyboard = new Scanner(System.in);    
+        System.out.println("****** Låner Menu ******");
+        System.out.println(" (1) Tilføj LP");
+        System.out.println(" (2) Rediger LP");
+        System.out.println(" (3) Find LP");
+        System.out.println(" (4) Print information om LP");// will generate testdata, delete in final version
+        System.out.println(" (0) Tilbage");
         System.out.print("\n Vælg:");
         while (!keyboard.hasNextInt()) {
             System.out.println("Input skal være et tal - prøv igen");

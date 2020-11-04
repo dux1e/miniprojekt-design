@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LPController
+comment1.params=
+comment1.target=LPController()
+comment2.params=barCode\ title\ artist\ publicationDate\ genre
+comment2.target=void\ createLP(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ searchLP()
+comment4.params=
+comment4.target=java.lang.String\ updateLP()
+comment5.params=
+comment5.target=java.lang.String\ deleteLP()
+numComments=6
