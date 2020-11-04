@@ -49,11 +49,9 @@ public class testrig
         Once.addCopy(copy1);
         lPContai1.addLP(Once);
         Kasper = new model.Person("Kasper", 1337, 0000, "Aalborg", "12233445");
-        loan1.addCopy(copy1);
-        loan1.addPerson(Kasper);
         copy2 = new model.Copy(1337, "Kasper", 20.20);
         Once.addCopy(copy2);
-        loan1.addCopy(copy2);
+        
     }
 
     /**

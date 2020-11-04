@@ -1,5 +1,5 @@
 package model;
-import java.util.ArrayList;
+
 public class Loan
 {
     private int loanID;
@@ -9,17 +9,14 @@ public class Loan
     private Person person;
     private Copy copy;
     private Person loan;
-    private ArrayList<Copy> copys;
-    private ArrayList<Person> persons;
-
+    
     public Loan(int loanID, String borrowDate,int period, boolean loanState)
     {
         this.loanID = loanID;
         this.borrowDate = borrowDate;
         this.period = period;
         this.loanState = loanState;
-        copys = new ArrayList<>();
-        persons = new ArrayList<>();
+        
     }
 
     public int getLoanID(){
@@ -44,14 +41,6 @@ public class Loan
 
     public void setPeriod(int period){
         this.period = period;
-    }
-    
-    public void addCopy(Copy copy) {
-        copys.add(copy);
-    }
-    
-    public void addPerson(Person person){
-        persons.add(person);
     }
     
     public boolean loanState(){
