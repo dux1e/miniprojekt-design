@@ -8,11 +8,6 @@ public class PersonController{
         personContainer = PersonContainer.getInstance();
     }
 
-    public void createPerson(String name, int personID, int postalCode, String city, String phone){
-        Person person = new Person(name,personID, postalCode, city, phone);
-        personContainer.addPerson(person);
-    }
-
     public Person findPerson(int personID){
         return personContainer.findPerson(personID);
     }
